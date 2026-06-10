@@ -1,0 +1,4 @@
+m=input("enter the first number :")
+b=input("enter the second number:")
+print ("the sum fo numbers is : " , int(m)+int(b))
+print("the diffrence of two number is :" , int(m)-int(b))
