@@ -1,0 +1,10 @@
+num = int(input("enter the number :"))
+if(num>1010):
+    print("number is positive")
+elif(num>50):
+    print("number is greater than 50")
+    if(num%10==5):
+        print("the ones digit of number is five")
+
+else:
+    print("the number is negative")        
