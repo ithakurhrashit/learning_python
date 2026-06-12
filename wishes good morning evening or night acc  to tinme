@@ -1,0 +1,11 @@
+import time 
+timestamp=time.strftime('%H')
+if(int(timestamp)<12):
+    print("goodmorning")
+elif(int(timestamp)>12):
+    if(int(timestamp)<=15):
+        print("good after noon")
+    elif(int(timestamp)>15):
+        if(int(timestamp)<19):
+            print("good evening")
+        else: print("good nighht")
