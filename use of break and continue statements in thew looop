@@ -1,0 +1,9 @@
+fruits=["apple","orange","mango","papaya","banana"]
+for fruit in fruits :
+    
+    if(fruit=="orange"):
+        continue
+    elif(fruit=="papaya"):
+        break
+    else:
+        print("the fruit is",fruit)
