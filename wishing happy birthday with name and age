@@ -1,0 +1,4 @@
+def happy_birthday(nbame,age):
+  print("happy birthday" , name ,"congratulations on turning " , age )
+
+happy_birthday(harshit,19)
