@@ -1,0 +1,25 @@
+#in this we will make a kbc game by using the list
+prizemoney=0
+print("welcome to kbc your prize money is " , prizemoney)
+question1 = ["who is the prime minister of india " , "narendra modi" , "rahul gandhi " , "hasrhit singh "]
+question2 = ["who is the first president of india " , "narebdra modi" , "rajendra prasad" , "rahul  gandhi " ,"vivek obroie"]
+print(question1[0])
+print("options are :", "\n" , question1[1],"\n" , question1[2],"\n" , question1[3],"\n" , "\n" )
+ans1=question1[1]
+ans2=question2[2]
+userans=str(input("enter the answer of first question"))
+if(userans==ans1):
+    print("right answer , you have won 20000")
+    prizemoney+=20000
+else :
+    print(" wrong answer , your prize money is still " , prizemoney)
+print(question2[0])
+print("\n your options are : \n " , question2[1] , "\n" , question2[2] , "\n" , question2[3], "\n" )
+userans2=str(input("enter the answer of second question"))
+if(userans==ans2):
+    print(" right answer you have won 40000")
+    prizemoney+=40000
+else:
+    print("wrong answer you have won nothing")
+
+print("thanks for playing \n your prize money is  " , prizemoney ,"\n you can withdraw the amount from the account of code with hasrry")
