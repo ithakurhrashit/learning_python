@@ -1,0 +1,27 @@
+print("="*50)
+print("="*50)
+print("\n welcome to the student management system \n")
+print("="*50)
+print("="*50)
+info = {}
+while True:
+    print("1. add student\n")
+    print("2. view student in system\n")
+    print("3. exit\n")
+    choice= int(input("enter the coice: \n"))
+    if choice==1:
+        student_name=input("\n enter the name of student : \n ").lower()
+        info[student_name]=input("\n enter the admission no of student : \n")
+    elif choice ==2:
+        print("\n student registered in the system are : \n")
+        for key,value in info.items():
+            print(f"student name : {key}\n admission no . : {value}\n")
+    elif choice==3:
+        print("\n exiting the management system \n")
+        break
+
+print("="*50)
+print("="*50)
+print(" thankyou for working with us\n")
+print("="*50)
+print("="*50)
