@@ -1,0 +1,33 @@
+# here we will create a book management system for a library 
+
+print("="*30)
+print("\nwelcome to the book management system\n")
+print("="*30)
+books =[]
+while True:
+    print("1. add book\n")
+    print("2. view books in system\n")
+    print("3. search book\n")
+    print("4. exit\n")
+    choice = int(input("enter your choice: "))
+
+    if choice==1:
+        book_name=input("\nenter the name of the book:\n").lower()
+        books.append(book_name)
+    elif choice==2:
+        print("books registered in the system are\n")
+        for b in books:
+            print(b)
+    elif choice==3:
+        search_book=input("\nenter the book you wanna search:\n").lower()
+        if search_book in books:
+            print("book found in the database")
+        else:
+            print("\nbook not found in the databse please add the book :) \n")
+    elif choice==4:
+        print("exiting the system")
+        break 
+
+print("="*30)
+print("\n thank you for using the book managemnt system \n")
+print("="*30)
