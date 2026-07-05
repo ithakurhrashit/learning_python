@@ -1,0 +1,11 @@
+import calendar
+print("="*50)
+print("="*50)
+print("\n welcome to the calendar generator for a specific month\n")
+print("="*50)
+print("="*50)
+year=int(input("\n enter the year(e.g 2023) : \n"))
+month = int(input("\n enter the the month in number (e.g 1 for jan , 2 for feb )\n"))
+print("\n the calendar for the month is : \n" , calendar.month(year,month))
+
+print("thankyou for using the calendar ")
