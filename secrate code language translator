@@ -1,0 +1,23 @@
+print("="*50)
+print("=== SECRATE LANGUAGE CODER & DECODER ===")
+print("="*50)
+print("1. Encode a message")
+print("2. Decode a message")
+print("3. Exit")
+answer=int(input("enter your choice: "))
+if(answer==1):
+    message = input("enter your message : ")
+    encoded_message = ""
+    for char in message:
+        encoded_message += chr(ord(char) + 1)
+    print("Encoded message:", encoded_message)
+elif(answer==2):
+    encoded_message = input("enter the encoded message : ")
+    decoded_message = ""
+    for char in encoded_message:
+        decoded_message += chr(ord(char) - 1)
+    print("Decoded message:", decoded_message)
+elif(answer==3):
+    print("Exiting...")
+else:
+    print("Invalid choice!")
