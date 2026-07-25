@@ -1,0 +1,16 @@
+# # in this we will learn how to handel an error
+# # try:
+# #     nums=[1,2,3,4,5]
+# #     print(nums[6])
+# # except IndexError:
+# #     print("the index is out of range")
+
+# # # using the finally clause statement
+# try:
+#     nums=[1,2,3,4,5]
+#     index= int(input("enter the index you wanyt to acess: "))
+#     print(nums[index])
+# except IndexError:
+#     print(" the index is out of range ")
+# finally:
+#     print("this is the end of program")
