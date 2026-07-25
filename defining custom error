@@ -1,0 +1,13 @@
+# salary=int(input("can you please enter your salary:"))
+# # if salary<10000:
+# #     raise ValueError("you are too poor to buy this product")
+
+# ## defining custom errors :
+#  salary=int(input("can you please enter your salary:"))
+
+# class PoorError(salary<10000):
+#     pass 
+# try:
+   
+# except PoorError:
+#     print("poor") 
