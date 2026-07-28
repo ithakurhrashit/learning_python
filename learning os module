@@ -1,0 +1,6 @@
+import os 
+
+
+
+for i in range (1,100):
+    os.rename(f"data/tutorial{i+1}" , f"data/loveyou{i+1}")
