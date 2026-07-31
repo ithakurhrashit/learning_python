@@ -1,0 +1,47 @@
+import random
+options=["1.snake" , "2.water" , "3.Gun" , "4.exit"]
+print("="*30)
+print("="*30)
+print("\n WELCOME TO  THE SNAKE WATER GUN \n")
+print("="*30)
+print("="*30)
+points=0
+count=0
+
+name = input("enter your name")
+print(f"welcome to the game {name} please be comfortable and enjoy")
+while True:
+ print(options)
+ ans=int(input("enter your choice"))
+ ansBycomputer = random.randint(1,4)
+ if(ans<0 or ans>4):
+    print("invalid choice")
+    break;
+ elif (ans is ansBycomputer):
+   print("we both choose the same thing")
+   count+=1
+ elif (ans==1 and  ansBycomputer==2):
+   print("you won! 10 points added")
+   points+=10
+   count+=1
+ elif(ans==1 and ansBycomputer==3 ):
+   print("you lost , no point added")
+   count+=1
+ elif(ans==2 and ansBycomputer==1):
+   print("you lost , no point added")
+   count+=1
+ elif(ans==2 and ansBycomputer==3):
+   print("you won 10 point added")
+   points+=10
+   count+=1
+ elif(ans==3 and ansBycomputer==1):
+   print("you won , 10 points added")
+   count+=1
+   points+=10
+ elif(ans==3 and ansBycomputer==2):
+   print("you lost no point deducted")
+   count+=1
+ elif(ans==4):
+   print("THANKS FOR PLAYING")
+   break;
+
