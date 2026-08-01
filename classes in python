@@ -1,0 +1,17 @@
+class details:
+    name="harshit"
+    admissionNo=2501920110173
+    branch="csit" 
+    def visible(self):
+        print("name:",self.name)
+        print("admissionNo:",self.admissionNo)
+        print("branch:",self.branch)
+
+A=details()
+A.visible()
+
+b=details()
+b.name="harsh vardhan"
+b.admissionNo=2501920110172
+b.branch="csit"
+b.visible()
